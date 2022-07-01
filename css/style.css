@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Cardo:wght@400;700&display=swap');
+:root{
+    --bg-size:100% 100%;
+    --main-color:white;
+    --title:'Baloo Bhai 2', cursive;
+    --font-para:'Cardo', serif;
+    --button-color:#bbe1fa;
+    --button-font-color:black;
+    --button-font-size:1.5rem;
+    --eff: .3s all ease;
+}
+
+*{
+    font-family: var(--font-para);
+}
+
+html{
+    font-size: 62.5%;
+}
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo .img_logo{
+   margin-left: -50rem;
+   border-radius: 3rem;
+}
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab,
+.fas {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body {
+    background: hsl(120, 1%, 83%);
+}
+.main_header{
+    font-size: 4rem;
+    background-color: rgb(180, 180, 170);
+}
+.main_heading{
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: black;
+}
+
+.main_heading__para{
+    font-size: 2.2rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.main_header__div{
+    height: calc(100vh - 40vh);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8)50%, rgba(0,0,0,0)),url('https://cdn.pixabay.com/photo/2016/03/09/14/40/office-1246484__480.jpg');
+    background-size: var(--bg-size);
+    width: 100%;
+    height: 60vh;
+}
+
+.main_header__div p{
+    font-weight: bold;
+    font-size: 4.5rem;
+    font-family: var(--title);
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.main_header__div h2{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+    transition: var(--eff);
+}
+.main_header__div  span{
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.main_header__div ul li{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 2rem;
+    margin-bottom: 2.5rem;
+    display: block;
+    font-family: var(--title);
+}
+.animateWord div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem -1rem;
+    margin-top: -2rem;
+}
+.animateWord div li{
+    overflow: hidden;
+    font-size: 3.5rem;
+    padding: 0 1rem;
+    height: 5.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+}
+
+.flip {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    
+}
+
+@-webkit-keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+
+}
+
+.main_header__div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: 2rem;
+    padding: .8rem 2rem;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 2rem;
+    font-family: var(--title);
+    outline: none;
+}
+.main_header__div button:hover,figure img:hover,.left_div__like:hover,.left_div__reply:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+.blog_left__div h1{
+    font-family:vr(--title);
+    font-weight: bold;
+    font-size:3rem ;
+
+}
+.blog_left__div .blog_title span{
+    color: #314634;
+}
+
+.blog_left__div p span{
+    color: #314634;
+}
+
+.left_div__like{
+    margin-top: 3rem;
+    transition: vr(--eff);
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    width: 6rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.left_div__reply{
+    margin-top: 3rem;
+    transition: vr(--eff);
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.replies{
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
+}
+
+.Raushan_show {
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+}
+
+/* Right part css starts from here */
+.about_me_div
+{
+    width: auto;
+    height: 50rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent 20%, rgba(196, 194, 194, 0.8) 50%), url('../images/raushan.jpg');
+    background-size: var(--bg-size);
+}
+.about_me_div p:first-child
+{
+    padding-bottom: 0.2rem ;
+    font-size: 2.67rem;
+    font-family: 'Cardo', serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.about_me_div p
+{
+    color: black;
+}
+
+.right_div_title{
+    background-color: rgb(231, 225, 225);
+    box-shadow:0 1rem 2rem -1rem rgba(211, 185, 185, 0.7);
+}
+.right_div_title h2
+{
+    font-size: 2.5rem;
+    padding-left: 2rem;
+
+}
+
+.popular_post_img1
+{
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT12cP23udqvCqHW_2oAvK257g3oVQkv23tOumxtpfFOhHi8a5B');
+    background-size: var(--bg-size);
+}
+.popular_post_img2
+{
+    background-image: url('https://wallpapercave.com/wp/wp4025628.jpg');
+   background-size: var(--bg-size);
+}
+.popular_post_img3
+{
+    background-image: url('https://caknowledge.com/wp-content/uploads/2017/09/Ratan-Tata-Net-Worth.jpg');
+    background-size: var(--bg-size);
+}
+.popular_post_img4
+{
+    background-image: url('https://img.etimg.com/thumb/width-1200,height-900,imgsize-246720,resizemode-1,msid-74381989/markets/stocks/news/coronavirus-hit-mukesh-ambani-loses-5-billion-ajim-premji-869m-adani-496m.jpg');
+    background-size: var(--bg-size);
+}
+.right_sub_div{
+    padding: 1.5rem .2rem;
+    background-color: white;
+}
+.right_sub_div .row{
+    margin-bottom: 2rem;
+   padding-left: 1rem;
+}
+.right_sub_div .row:last-child{
+    margin-bottom: 0;
+}
+
+/* advertisment */
+.right_sub_div .ads_img p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+/*tags style*/
+.tags_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+    grid-gap: .5rem;
+    text-align: center;
+    justify-content: center;
+}
+.tags_main a{
+    font-size: 1.6rem;
+    line-height: 170%;
+    font-weight: lighter;
+    background-color: rgb(49, 49, 46);
+    color: rgb(89, 222, 226);
+    padding: 0.4rem;
+    margin: 0.2rem;
+    transition: vr(--eff);
+}
+.tags_main a:hover{
+    color: rgb(250, 250, 250);
+}
+/* follow me from here */
+.fab , .fas{
+    color: black;
+}
+.fab:hover , .fas:hover{
+    color:rgb(218, 158, 158);
+    transform: rotate(360deg);
+}
+
+/* form part */
+.sub_col
+{
+    background-color: rgb(147, 255, 255);
+}
+.sub_col label{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: (var(--font-para));
+}
+.form-text{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-primary{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+ /* footer */
+ footer{
+     padding-top: 1rem;
+     background-color: rgb(58, 55, 52);
+ }
+footer p{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*responsive code start*/
+@media(max-width:998px) {
+    html {
+        font-size: 60%;
+    }
+
+    .left_div_blog {
+        margin: 3rem 0;
+    }
+
+    p,
+    label,
+    input::placeholder {
+        font-size: 2.2rem;
+    }
+
+    :root {
+        --btn-font: 2rem;
+    }
+
+    .main_header h2 {
+        font-size: 4.5rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .left_div_blog {
+        margin: 3rem 0;
+    }
+    .main_header__div{
+        height: 30rem;
+    }
+}
+
+@media(max-width:1196px){
+    .logo .img_logo{
+        margin-left: -40rem;
+    }
+}
+@media(max-width:1000px){
+    .logo .img_logo{
+        margin-left: -30rem;
+        height: 10rem;
+    }
+}
+@media(max-width:584px){
+    .logo .img_logo{
+        margin-left: -20rem;
+        width: 12rem;
+        height: 9rem;
+    }
+}
+@media(max-width:375px){
+    .logo .img_logo{
+        margin-left: -10rem;
+    }
+}
+@media(max-width:438px){
+    .logo .img_logo{
+        margin-left: -9rem;
+    }
+}
